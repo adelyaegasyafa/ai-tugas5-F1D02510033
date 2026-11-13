@@ -73,4 +73,4 @@ Aturan berasal dari pedoman pengelolaan sampah KLHK, PP No. 27 Tahun 2020, dan U
 ---
 
 ## 6. Penggunaan Alat Bantu AI
-Menggunakan alat bantu AI (Gemini) untuk membantu memperbaiki eror pada struktur kode Python dasar, merapikan format penulisan aturan IF-THEN ke dalam file JSON, serta menyusun draf dokumentasi README. Seluruh program telah dijalankan, diuji secara mandiri, dan dipahami alur logikanya.
+Menggunakan alat bantu AI untuk membantu memperbaiki eror pada struktur kode Python dasar, merapikan format penulisan aturan IF-THEN ke dalam file JSON, serta menyusun draf dokumentasi README. Seluruh program telah dijalankan, diuji secara mandiri, dan dipahami alur logikanya.
