@@ -1,0 +1,53 @@
+{
+  "judul": "Klasifikasi jenis sampah rumah tangga",
+  "batas": "Aturan berasal dari pedoman pengelolaan sampah KLHK, PP No. 27 Tahun 2020, dan US EPA untuk skala rumah tangga. Sistem ini hanya mencakup sampah organik, anorganik daur ulang, B3, dan residu. Hasilnya saran awal pemilahan, bukan keputusan akhir.",
+  "sumber": {
+    "S1": "Pedoman Pemilahan Sampah dari Sumber, Direktorat Penanganan Sampah KLHK RI, https://sipsn.menlhk.go.id, diakses 14 Nov 2026",
+    "S2": "Peraturan Pemerintah RI Nomor 27 Tahun 2020 tentang Pengelolaan Sampah Spesifik, https://peraturan.bpk.go.id, diakses 14 Nov 2026",
+    "S3": "How Do I Recycle?: Common Recyclables, US Environmental Protection Agency (EPA), https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables, diakses 14 Nov 2026"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["sisa makanan atau tumbuhan", "kotoran hewan"],
+      "mode": "atau",
+      "maka": "bahan hayati mudah terurai",
+      "sumber": "S1"
+    },
+    {
+      "id": "R2",
+      "jika": ["bahan hayati mudah terurai", "tidak terkena bahan kimia"],
+      "mode": "dan",
+      "maka": "Sampah Organik (Kompos)",
+      "sumber": "S1"
+    },
+    {
+      "id": "R3",
+      "jika": ["plastik keras atau botol", "kertas atau kardus kering", "kaleng atau kaca"],
+      "mode": "atau",
+      "maka": "material bernilai ekonomis",
+      "sumber": "S3"
+    },
+    {
+      "id": "R4",
+      "jika": ["material bernilai ekonomis", "kondisi bersih dan tidak berminyak"],
+      "mode": "dan",
+      "maka": "Sampah Anorganik Daur Ulang",
+      "sumber": "S3"
+    },
+    {
+      "id": "R5",
+      "jika": ["mengandung zat beracun atau korosif", "baterai bekas, lampu neon, atau kemasan pestisida"],
+      "mode": "atau",
+      "maka": "Sampah B3 (Berbahaya)",
+      "sumber": "S2"
+    },
+    {
+      "id": "R6",
+      "jika": ["sulit terurai alami", "kotor, basah, atau berlapis plastik campuran"],
+      "mode": "dan",
+      "maka": "Sampah Residu (TPA)",
+      "sumber": "S1"
+    }
+  ]
+}
